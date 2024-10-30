@@ -2,15 +2,14 @@
   "name": "HyperHDR",
   "version": "19.0.0.0",
   "slug": "hyperhdr",
-  "description": "HyperHDR is an open source ambient lighting implementation for television sets based on the video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading for better performance especially for USB grabbers.",
-  "url": "htpps://www.hyperhdr.eu/",
+  "description": "Open source ambient lighting implementation based on video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading.",
+  "url": "https://github.com/awawa-dev/HyperHDR",
   "arch": [
     "amd64",
-    "armhf",
     "aarch64"
   ],
   "startup": "application",
-  "apparmor": false,
+  "apparmor": true,
   "boot": "auto",
   "ports": {
     "8090/tcp": 8090,
@@ -31,7 +30,7 @@
   "map": [
     "config:rw"
   ],
-  "image": "jonah1024/hyperhdr-addon-{arch}",
+  "image": "noname93d/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
   "privileged": [
