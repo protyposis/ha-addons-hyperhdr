@@ -12,10 +12,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.2.2
 
       # Installs Node JS
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4.1.0
 
       # Sync version to source
       - run: ./.github/scripts/update-hyperhdr-version.sh
@@ -27,7 +27,7 @@ jobs:
         run: ./.github/scripts/build.sh amd64 &&
              ./.github/scripts/build.sh aarch64
 
-      - uses: test-room-7/action-update-file@v1
+      - uses: test-room-7/action-update-file@v1.8.0
         if: ${{ env.VERSION != env.RELEASE }}
         with:
           file-path: addon-hyperhdr/config.json
