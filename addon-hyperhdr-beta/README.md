@@ -1,4 +1,4 @@
-# Home Assistant Addons
+# BETA - Home Assistant Addons
 
 ## Installation instructions:
 
