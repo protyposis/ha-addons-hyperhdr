@@ -1,3 +1,7 @@
+## As always. Create a backup before updating.
+
+***
+
 ## What’s changed in this Plugin.
 
 - ⬆️ Update HyperHDR from 20.0.0.0 to 21.0.0.0.
