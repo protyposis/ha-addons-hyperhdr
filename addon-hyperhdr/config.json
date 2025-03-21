@@ -34,10 +34,7 @@
   "options": {},
   "schema": {},
   "full_access": true,
-  "uart": true,
-  "usb": true,
   "video": true,
-  "gpio": true,
   "webui": "http://[HOST]:[PORT:8090]",
   "init": false
 }
