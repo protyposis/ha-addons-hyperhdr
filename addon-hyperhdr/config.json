@@ -46,7 +46,8 @@
     "/dev/vchiq",
     "/dev/amvideo",
     "/dev/fb0",
-    "/dev/mem"
+    "/dev/mem",
+    "/dev/ttyACM0"
   ],
   "webui": "http://[HOST]:[PORT:8090]",
   "init": false
