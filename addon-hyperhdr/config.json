@@ -33,10 +33,7 @@
   "image": "noname93d/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
-  "privileged": [
-    "SYS_ADMIN",
-    "SYS_RAWIO"
-  ],
+  "full_access": true,
   "uart": true,
   "usb": true,
   "video": true,
