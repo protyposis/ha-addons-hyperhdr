@@ -38,6 +38,7 @@
     "SYS_RAWIO"
   ],
   "uart": true,
+  "udev": true,
   "usb": true,
   "video": true,
   "gpio": true,
