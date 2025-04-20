@@ -46,5 +46,6 @@
   ],
   "ingress": true,
   "ingress_port": 8090,
+  "ingress_stream": true,
   "init": false
 }
