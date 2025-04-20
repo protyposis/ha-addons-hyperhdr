@@ -33,8 +33,21 @@
   "image": "noname93d/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
-  "full_access": true,
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO"
+  ],
+  "uart": true,
+  "usb": true,
   "video": true,
+  "gpio": true,
+  "devices": [
+    "/dev/spidev0.0",
+    "/dev/vchiq",
+    "/dev/amvideo",
+    "/dev/fb0",
+    "/dev/mem"
+  ],
   "webui": "http://[HOST]:[PORT:8090]",
   "init": false
 }
