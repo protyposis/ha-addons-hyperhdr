@@ -9,7 +9,6 @@
     "aarch64"
   ],
   "startup": "application",
-  "apparmor": false,
   "boot": "auto",
   "ports": {
     "8090/tcp": 8090,
