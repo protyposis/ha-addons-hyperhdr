@@ -3,7 +3,7 @@
   "version": "21.0.0.0",
   "slug": "hyperhdr",
   "description": "Open source ambient lighting implementation based on video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading.",
-  "url": "https://github.com/awawa-dev/HyperHDR",
+  "url": "https://github.com/protyposis/ha-addons-hyperhdr/tree/master/addon-hyperhdr",
   "arch": [
     "amd64",
     "aarch64"
@@ -30,7 +30,7 @@
   "map": [
     "config:rw"
   ],
-  "image": "noname93d/hyperhdr-addon-{arch}",
+  "image": "ghcr.io/protyposis/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
   "privileged": [
