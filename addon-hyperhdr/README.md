@@ -1,37 +1,34 @@
-# Home Assistant Addons
+# Home Assistant Apps
 
-## Installation instructions:
+## Installation instructions
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FNoName93D%2Fha-addons)
+[![Add this app repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fprotyposis%2Fha-addons-hyperhdr)
 
-Or Simply add this github repo `https://github.com/noname93d/ha-addons.git` as a third-party add-on repository in Home Assistant **Add-on Store** then install it.
-See [here](https://www.home-assistant.io/hassio/installing_third_party_addons/) for more details on how to do that
+Or add `https://github.com/protyposis/ha-addons-hyperhdr` as a third-party app repository in Home Assistant's **App store**, then install HyperHDR.
+See the [Home Assistant instructions](https://www.home-assistant.io/common-tasks/os/#installing-a-third-party-app-repository) for details.
 
 ***
 
-[![HyperHDR logo](https://raw.githubusercontent.com/noname93d/ha-addons/master/addon-hyperhdr/logo.png)](https://github.com/awawa-dev/HyperHDR/)
+## HyperHDR
 
-  - HyperHDR is an open source and light weight Ambient Lighting Implementation.
-  
-  Project homesite: https://github.com/awawa-dev/HyperHDR
+HyperHDR is an open source and lightweight ambient lighting implementation.
 
-## Credits:
+Project homepage: https://github.com/awawa-dev/HyperHDR
+
+## Credits
 
 - [awawa-dev](https://github.com/awawa-dev/HyperHDR) for HyperHDR
-- [ihrapsa](https://github.com/ihrapsa/hassio-addons) for original Add-On
+- [NoName93D/ha-addons](https://github.com/NoName93D/ha-addons) for this fork's upstream app
+- [ihrapsa](https://github.com/ihrapsa/hassio-addons) for the original app
 
-## Important:
+## Migration
 
-  If you migrate from original Add-On and want to keep your config: 
-  
-  [1.] Backup config! 
-  
-  [2.] Shutdown original Add-On. 
-  
-  [3.] Install this Add-On. 
-  
-  [4.] Start this Add-On. 
-  
-  [5. optional] Uninstall original Add-On.
+To migrate from the original app and keep your configuration:
+
+1. Back up your configuration.
+2. Stop the original app.
+3. Install this app.
+4. Start this app.
+5. Optionally, uninstall the original app.
 
 ***
