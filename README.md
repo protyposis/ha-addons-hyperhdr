@@ -23,7 +23,7 @@ The **Build HyperHDR** workflow builds both architectures on native runners. Pul
 
 After the first publish, open each package under the GitHub account's **Packages**, then **Package settings → Change visibility → Public**. Public repository visibility does not automatically make a new GHCR package public. Verify both version tags can be pulled without credentials before installing in Home Assistant. If an existing package rejects the workflow token, grant this repository Actions access in that package's settings.
 
-The workflow does not automatically upgrade HyperHDR or commit version changes. The configured version must match an upstream `v<version>` release with Linux tarballs for both architectures. Review upgrades explicitly before publishing, especially when sharing existing settings.
+The workflow does not automatically upgrade HyperHDR or commit version changes. The configured version must match an upstream `v<version>` release with Bookworm tarballs for both architectures. The image uses a versioned Home Assistant Debian Bookworm base and checks that the downloaded HyperHDR executable can run during the build. Review upgrades explicitly before publishing, especially when sharing existing settings.
 
 ## Migrate from NoName93D/ha-addons
 

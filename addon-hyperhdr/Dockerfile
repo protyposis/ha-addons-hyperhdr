@@ -5,7 +5,7 @@ ARG DOWNLOAD_URL
 ARG BUILD_VERSION
 ARG BUILD_ARCH
 
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends git cmake build-essential \
     libasound2-dev qtbase5-dev libqt5serialport5-dev libqt5sql5-sqlite libqt5svg5-dev libqt5x11extras5-dev libusb-1.0-0-dev \
@@ -18,7 +18,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-ins
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-RUN wget -q "${DOWNLOAD_URL}/v${BUILD_VERSION}/HyperHDR-${BUILD_VERSION}-Linux-$(uname -m).tar.gz" -O - | tar -xvz -C /usr
+RUN wget -q "${DOWNLOAD_URL}/v${BUILD_VERSION}/HyperHDR-${BUILD_VERSION}.bookworm-$(uname -m).tar.gz" -O - | tar -xvz -C /usr \
+    && /usr/bin/hyperhdr --version
 
 VOLUME /config
 EXPOSE 8090 8092 19333 19400 19444 19445
