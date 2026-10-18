@@ -1,29 +1,22 @@
-## As always. Create a backup before updating.
+# Changelog
+
+Back up `/config/hyperhdr` before updating. Restore the pre-upgrade backup before downgrading.
 
 ## 22.0.0.0
 
-- Update HyperHDR from 21.0.0.0 to 22.0.0.0 ([release notes](https://github.com/awawa-dev/HyperHDR/releases/tag/v22.0.0.0)).
-- Use the recommended multi-architecture Home Assistant Debian base, pinned to Trixie 2026.10.0, with matching upstream binaries.
-- Keep the existing `/config/hyperhdr` settings path. Back up this directory before upgrading; restore that backup before rolling back to v21.
+- Update to HyperHDR v22 ([release notes](https://github.com/awawa-dev/HyperHDR/releases/tag/v22.0.0.0)).
+- Use the multi-architecture Home Assistant Debian Trixie base (2026.10.0).
 
-***
+## 21.0.0.0
 
-## What’s changed in this Plugin.
+- Update to HyperHDR v21.
+- Update app documentation.
 
-- ⬆️ Update HyperHDR from 20.0.0.0 to 21.0.0.0.
-- ⬆️ Changed few documentation and details.
+## 20.0.0.0
 
-## What’s changed in last version of this Plugin.
+- Update to HyperHDR v20.
+- Change the container image location.
+- Remove armhf support.
+- Update app documentation.
 
-- ⬆️ Update HyperHDR from 19.0.0.0 to 20.0.0.0.
-- ⬆️ Changed Docker image location.
-- ⬆️ Removed Arch armhf.
-- ⬆️ Changed few documentation and details.
-
-### Actually, I have just a little idea what I'm doing here. But it works somehow.
-
-***
-
-## What's changed in HyperHDR.
-
-  https://github.com/awawa-dev/HyperHDR/releases
+[All HyperHDR releases](https://github.com/awawa-dev/HyperHDR/releases)
