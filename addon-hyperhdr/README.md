@@ -1,15 +1,34 @@
-# HyperHDR
+# Home Assistant Apps
 
-[HyperHDR](https://github.com/awawa-dev/HyperHDR) provides ambient lighting based on video and audio analysis, including HDR tone mapping.
+## Installation instructions
 
-This app is maintained in [protyposis/ha-addons-hyperhdr](https://github.com/protyposis/ha-addons-hyperhdr). Install it from `https://github.com/protyposis/ha-addons-hyperhdr` in Home Assistant's app/add-on store. Images for amd64 and aarch64 are hosted publicly on GHCR; no Docker Hub account is required.
+[![Add this app repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fprotyposis%2Fha-addons-hyperhdr)
 
-## Migrating from upstream
+Or add `https://github.com/protyposis/ha-addons-hyperhdr` as a third-party app repository in Home Assistant's **App store**, then install HyperHDR.
+See the [Home Assistant instructions](https://www.home-assistant.io/common-tasks/os/#installing-a-third-party-app-repository) for details.
 
-**Back up the entire Home Assistant configuration directory's `hyperhdr` folder and stop the upstream app before starting this fork.** Both apps use the same `/config/hyperhdr` directory. Do not run both at once, and do not downgrade a newer HyperHDR database.
+***
 
-Follow the [complete migration and rollback instructions](https://github.com/protyposis/ha-addons-hyperhdr#migrate-from-noname93dha-addons) to preserve settings, calibration, and custom files. Home Assistant app-level settings and automations using the old app ID must be transferred separately.
+## HyperHDR
+
+HyperHDR is an open source and lightweight ambient lighting implementation.
+
+Project homepage: https://github.com/awawa-dev/HyperHDR
 
 ## Credits
 
-[awawa-dev](https://github.com/awawa-dev/HyperHDR), [NoName93D](https://github.com/NoName93D/ha-addons), and [ihrapsa](https://github.com/ihrapsa/hassio-addons).
+- [awawa-dev](https://github.com/awawa-dev/HyperHDR) for HyperHDR
+- [NoName93D/ha-addons](https://github.com/NoName93D/ha-addons) for this fork's upstream app
+- [ihrapsa](https://github.com/ihrapsa/hassio-addons) for the original app
+
+## Migration
+
+To migrate from the original app and keep your configuration:
+
+1. Back up your configuration.
+2. Stop the original app.
+3. Install this app.
+4. Start this app.
+5. Optionally, uninstall the original app.
+
+***
