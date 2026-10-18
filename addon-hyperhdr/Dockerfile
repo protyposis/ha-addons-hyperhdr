@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/home-assistant/base-debian:trixie-2026.10.0
 
 FROM ${BUILD_FROM}
 ARG DOWNLOAD_URL
@@ -18,7 +18,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-ins
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-RUN wget -q "${DOWNLOAD_URL}/v${BUILD_VERSION}/HyperHDR-${BUILD_VERSION}.bookworm-$(uname -m).tar.gz" -O - | tar -xvz -C /usr \
+# Release tags have four version fields; v22 asset filenames use three.
+RUN wget -q "${DOWNLOAD_URL}/v${BUILD_VERSION}/HyperHDR-${BUILD_VERSION%.*}.trixie-$(uname -m).tar.gz" -O - | tar -xvz -C /usr \
     && /usr/bin/hyperhdr --version
 
 VOLUME /config

@@ -1,5 +1,11 @@
 ## As always. Create a backup before updating.
 
+## 22.0.0.0
+
+- Update HyperHDR from 21.0.0.0 to 22.0.0.0 ([release notes](https://github.com/awawa-dev/HyperHDR/releases/tag/v22.0.0.0)).
+- Use the recommended multi-architecture Home Assistant Debian base, pinned to Trixie 2026.10.0, with matching upstream binaries.
+- Keep the existing `/config/hyperhdr` settings path. Back up this directory before upgrading; restore that backup before rolling back to v21.
+
 ***
 
 ## What’s changed in this Plugin.
